@@ -54,6 +54,8 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+end
+
   gem 'awesome_print'
   gem 'dotenv-rails' # trabalhar com variaveis de ambiene dentro do projeto rails, esconder user e password
   gem 'factory_bot_rails' # criar dados mais facil
@@ -61,7 +63,6 @@ group :development, :test do
   gem 'pry-rails' # gem para criar breakpoint na aplicação (debug) command: binding.pry
   gem 'rspec-rails' # mini teste por padrão
   gem 'rubocop' # dicas para padronizaar projeto de acordo com a comunidade
-end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
@@ -74,13 +75,17 @@ group :development do
   # gem "spring"
 end
 
+
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
-  gem 'database_cleaner' #sempre que execultar switch teste, ele vai limpar dados vazios do banco
-  gem 'shoulda_matchers' # ter sintaxe mais facil para escrever testes
+  
+end
+
+  gem "database_cleaner" #sempre que execultar switch teste, ele vai limpar dados vazios do banco
+  # gem 'shoulda_matchers' # ter sintaxe mais facil para escrever testes
   gem 'simplecov' # dar gráfico do projeto, para testes
   gem 'vcr' # criar request fakers
-end
+ 
