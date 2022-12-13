@@ -1,9 +1,9 @@
-<<<<<<< HEAD
-# README
+<<<<<<<
+# e-commerce em Ruby on Rails
 
-Teste! 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Utilizando o fluxo: https://whimsical.com/e-commerce-showzim-LzJQQLaeREuubiZSkCMmC5
+
+Ruby: 3.1.2 Rails 7.0.3
 
 Things you may want to cover:
 
@@ -23,7 +23,4 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
-=======
-# e-commerce-ruby
->>>>>>> 44497aed83dbb6006fa3e05de89bc599ecf3c916
+
