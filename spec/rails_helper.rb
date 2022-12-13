@@ -9,6 +9,7 @@ require_relative '../config/environment'
 abort("The Rails environment is running in production mode!") if Rails.env.production?
 require 'rspec/rails'
 
+#abrir dentro da pasta suporte todos os arquivos qe contem .rb irá ordenar por ordem alfabetica e carregar todos eles
 Dir[Rails.root.join('spec', 'support', '**', '*.rb')].sort.each { |f| require f }
 
   ActiveRecord::Migration.maintain_test_schema!
