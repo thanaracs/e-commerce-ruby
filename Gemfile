@@ -83,7 +83,7 @@ group :test do
   gem "webdrivers"
   
 end
-
+  gem 'shoulda-matchers', '~> 5.0'
   gem "database_cleaner" #sempre que execultar switch teste, ele vai limpar dados vazios do banco
   # gem 'shoulda_matchers' # ter sintaxe mais facil para escrever testes
   gem 'simplecov' # dar gráfico do projeto, para testes
