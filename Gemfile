@@ -22,6 +22,9 @@ gem "jsbundling-rails"
 gem "turbo-rails"
 
 gem 'devise'
+
+gem 'simple_form'
+
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
 
