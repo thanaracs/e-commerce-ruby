@@ -1,2 +1,10 @@
-<h1>Bom vindo ao nosso e-commerce</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+
+<%# <p>Find me in app/views/home/index.html.erb</p> %>
+<h3> Olá </h3>
+<% if user_signed_in? %>
+    <h1>Bem vindo ao nosso e-commerce</h1>
+    <%= link_to "logout", destroy_user_session_path, method: :delete%>
+<% else %>
+    <h2> Você não está logado! Por favor, se cadastre. <%= link_to "Sign up", new_user_registration_path %></h2>
+     <%= link_to "login", new_user_registration_path, :class => 'navbar-link' %>
+<% end %>
